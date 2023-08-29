@@ -1,0 +1,1555 @@
+cabal-version: 3.0
+name: sudoku
+version: 0
+flag 1
+  manual: False
+  default: False
+flag 2
+  manual: False
+  default: False
+flag 3
+  manual: False
+  default: False
+flag 4
+  manual: False
+  default: False
+flag 5
+  manual: False
+  default: False
+flag 6
+  manual: False
+  default: False
+flag 7
+  manual: False
+  default: False
+flag 8
+  manual: False
+  default: False
+flag 9
+  manual: False
+  default: False
+flag 10
+  manual: False
+  default: False
+flag 11
+  manual: False
+  default: False
+flag 12
+  manual: False
+  default: False
+flag 13
+  manual: False
+  default: False
+flag 14
+  manual: False
+  default: False
+flag 15
+  manual: False
+  default: False
+flag 16
+  manual: False
+  default: False
+flag 17
+  manual: False
+  default: False
+flag 18
+  manual: False
+  default: False
+flag 19
+  manual: False
+  default: False
+flag 20
+  manual: False
+  default: False
+flag 21
+  manual: False
+  default: False
+flag 22
+  manual: False
+  default: False
+flag 23
+  manual: False
+  default: False
+flag 24
+  manual: False
+  default: False
+flag 25
+  manual: False
+  default: False
+flag 26
+  manual: False
+  default: False
+flag 27
+  manual: False
+  default: False
+flag 28
+  manual: False
+  default: False
+flag 29
+  manual: False
+  default: False
+flag 30
+  manual: False
+  default: False
+flag 31
+  manual: False
+  default: False
+flag 32
+  manual: False
+  default: False
+flag 33
+  manual: False
+  default: False
+flag 34
+  manual: False
+  default: False
+flag 35
+  manual: False
+  default: False
+flag 36
+  manual: False
+  default: False
+flag 37
+  manual: False
+  default: False
+flag 38
+  manual: False
+  default: False
+flag 39
+  manual: False
+  default: False
+flag 40
+  manual: False
+  default: False
+flag 41
+  manual: False
+  default: False
+flag 42
+  manual: False
+  default: False
+flag 43
+  manual: False
+  default: False
+flag 44
+  manual: False
+  default: False
+flag 45
+  manual: False
+  default: False
+flag 46
+  manual: False
+  default: False
+flag 47
+  manual: False
+  default: False
+flag 48
+  manual: False
+  default: False
+flag 49
+  manual: False
+  default: False
+flag 50
+  manual: False
+  default: False
+flag 51
+  manual: False
+  default: False
+flag 52
+  manual: False
+  default: False
+flag 53
+  manual: False
+  default: False
+flag 54
+  manual: False
+  default: False
+flag 55
+  manual: False
+  default: False
+flag 56
+  manual: False
+  default: False
+flag 57
+  manual: False
+  default: False
+flag 58
+  manual: False
+  default: False
+flag 59
+  manual: False
+  default: False
+flag 60
+  manual: False
+  default: False
+flag 61
+  manual: False
+  default: False
+flag 62
+  manual: False
+  default: False
+flag 63
+  manual: False
+  default: False
+flag 64
+  manual: False
+  default: False
+library
+  if flag(60) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(48) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(48) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(44) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(44) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(44) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if !flag(44) && !flag(48) && !flag(60) && !flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(59) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(47) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(47) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if !flag(43) && !flag(47) && !flag(59) && !flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(58) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(46) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(46) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if !flag(42) && !flag(46) && !flag(58) && !flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(57) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if !flag(41) && !flag(45) && !flag(57) && !flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(52) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(40) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(40) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if !flag(36) && !flag(40) && !flag(52) && !flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(51) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if !flag(35) && !flag(39) && !flag(51) && !flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(38)
+    build-depends: unsatisfiable <0
+
+  if !flag(34) && !flag(38) && !flag(50) && !flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(37)
+    build-depends: unsatisfiable <0
+
+  if !flag(33) && !flag(37) && !flag(49) && !flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(28) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(16) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(16) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if !flag(12) && !flag(16) && !flag(28) && !flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(27) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if !flag(11) && !flag(15) && !flag(27) && !flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(14)
+    build-depends: unsatisfiable <0
+
+  if !flag(10) && !flag(14) && !flag(26) && !flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(25)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(25)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(13)
+    build-depends: unsatisfiable <0
+
+  if !flag(9) && !flag(13) && !flag(25) && !flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(8)
+    build-depends: unsatisfiable <0
+
+  if !flag(4) && !flag(8) && !flag(20) && !flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(19)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(19)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(7)
+    build-depends: unsatisfiable <0
+
+  if !flag(3) && !flag(7) && !flag(19) && !flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(18)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(18)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(6)
+    build-depends: unsatisfiable <0
+
+  if !flag(2) && !flag(6) && !flag(18) && !flag(22)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(21)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(21)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(17)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(21)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(17)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(5)
+    build-depends: unsatisfiable <0
+
+  if !flag(1) && !flag(5) && !flag(17) && !flag(21)
+    build-depends: unsatisfiable <0
+
+  if flag(48) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(32) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(32) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(16) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(16) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(16) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if !flag(16) && !flag(32) && !flag(48) && !flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(47) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(31) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(31) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if !flag(15) && !flag(31) && !flag(47) && !flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(46) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(30) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(30) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if !flag(14) && !flag(30) && !flag(46) && !flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(29) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(29) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if !flag(13) && !flag(29) && !flag(45) && !flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(44) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(28) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(28) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if !flag(12) && !flag(28) && !flag(44) && !flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(27) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(27) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if !flag(11) && !flag(27) && !flag(43) && !flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(42)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(42)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if !flag(10) && !flag(26) && !flag(42) && !flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(41)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(41)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(25)
+    build-depends: unsatisfiable <0
+
+  if !flag(9) && !flag(25) && !flag(41) && !flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(40) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(24) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(24) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if !flag(8) && !flag(24) && !flag(40) && !flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(23) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(23) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if !flag(7) && !flag(23) && !flag(39) && !flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(38)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(38)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if !flag(6) && !flag(22) && !flag(38) && !flag(54)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(37)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(37)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(21)
+    build-depends: unsatisfiable <0
+
+  if !flag(5) && !flag(21) && !flag(37) && !flag(53)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if !flag(4) && !flag(20) && !flag(36) && !flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(35)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(35)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(19)
+    build-depends: unsatisfiable <0
+
+  if !flag(3) && !flag(19) && !flag(35) && !flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(34)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(34)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(18)
+    build-depends: unsatisfiable <0
+
+  if !flag(2) && !flag(18) && !flag(34) && !flag(50)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(33)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(33)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(17)
+    build-depends: unsatisfiable <0
+
+  if !flag(1) && !flag(17) && !flag(33) && !flag(49)
+    build-depends: unsatisfiable <0
+
+  if flag(60) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(56) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(56) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(52) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(52) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(52) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if !flag(52) && !flag(56) && !flag(60) && !flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(59) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(55) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(55) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(51) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(51) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(51) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if !flag(51) && !flag(55) && !flag(59) && !flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(58) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(54) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(54) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if !flag(50) && !flag(54) && !flag(58) && !flag(62)
+    build-depends: unsatisfiable <0
+
+  if flag(57) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(53) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(53) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(57)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(53)
+    build-depends: unsatisfiable <0
+
+  if !flag(49) && !flag(53) && !flag(57) && !flag(61)
+    build-depends: unsatisfiable <0
+
+  if flag(44) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(40) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(40) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(36) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if !flag(36) && !flag(40) && !flag(44) && !flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if !flag(35) && !flag(39) && !flag(43) && !flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(42)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(42)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(38)
+    build-depends: unsatisfiable <0
+
+  if !flag(34) && !flag(38) && !flag(42) && !flag(46)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(41)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(41)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(37)
+    build-depends: unsatisfiable <0
+
+  if !flag(33) && !flag(37) && !flag(41) && !flag(45)
+    build-depends: unsatisfiable <0
+
+  if flag(28) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(24) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(24) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(20) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if !flag(20) && !flag(24) && !flag(28) && !flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(27) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(23) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(23) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if !flag(19) && !flag(23) && !flag(27) && !flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if !flag(18) && !flag(22) && !flag(26) && !flag(30)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(25)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(25)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(21)
+    build-depends: unsatisfiable <0
+
+  if !flag(17) && !flag(21) && !flag(25) && !flag(29)
+    build-depends: unsatisfiable <0
+
+  if flag(12) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(8) && flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(4) && flag(8)
+    build-depends: unsatisfiable <0
+
+  if !flag(4) && !flag(8) && !flag(12) && !flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(11)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(11)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(7)
+    build-depends: unsatisfiable <0
+
+  if !flag(3) && !flag(7) && !flag(11) && !flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(14)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(14)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(10)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(14)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(10)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(6)
+    build-depends: unsatisfiable <0
+
+  if !flag(2) && !flag(6) && !flag(10) && !flag(14)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(13)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(13)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(9)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(13)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(9)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(5)
+    build-depends: unsatisfiable <0
+
+  if !flag(1) && !flag(5) && !flag(9) && !flag(13)
+    build-depends: unsatisfiable <0
+
+  if !flag(61) && !flag(62) && !flag(63) && !flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(63) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(62) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(62) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(61) && flag(64)
+    build-depends: unsatisfiable <0
+
+  if flag(61) && flag(63)
+    build-depends: unsatisfiable <0
+
+  if flag(61) && flag(62)
+    build-depends: unsatisfiable <0
+
+  if !flag(57) && !flag(58) && !flag(59) && !flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(59) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(58) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(58) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(57) && flag(60)
+    build-depends: unsatisfiable <0
+
+  if flag(57) && flag(59)
+    build-depends: unsatisfiable <0
+
+  if flag(57) && flag(58)
+    build-depends: unsatisfiable <0
+
+  if !flag(53) && !flag(54) && !flag(55) && !flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(55) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(54) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(54) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(53) && flag(56)
+    build-depends: unsatisfiable <0
+
+  if flag(53) && flag(55)
+    build-depends: unsatisfiable <0
+
+  if flag(53) && flag(54)
+    build-depends: unsatisfiable <0
+
+  if !flag(49) && !flag(50) && !flag(51) && !flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(51) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(50) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(52)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(51)
+    build-depends: unsatisfiable <0
+
+  if flag(49) && flag(50)
+    build-depends: unsatisfiable <0
+
+  if !flag(45) && !flag(46) && !flag(47) && !flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(47) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(46) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(46) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(48)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(47)
+    build-depends: unsatisfiable <0
+
+  if flag(45) && flag(46)
+    build-depends: unsatisfiable <0
+
+  if !flag(41) && !flag(42) && !flag(43) && !flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(43) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(42) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(44)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(43)
+    build-depends: unsatisfiable <0
+
+  if flag(41) && flag(42)
+    build-depends: unsatisfiable <0
+
+  if !flag(37) && !flag(38) && !flag(39) && !flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(39) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(38) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(40)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(39)
+    build-depends: unsatisfiable <0
+
+  if flag(37) && flag(38)
+    build-depends: unsatisfiable <0
+
+  if !flag(33) && !flag(34) && !flag(35) && !flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(35) && flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(34) && flag(35)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(36)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(35)
+    build-depends: unsatisfiable <0
+
+  if flag(33) && flag(34)
+    build-depends: unsatisfiable <0
+
+  if !flag(29) && !flag(30) && !flag(31) && !flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(31) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(30) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(30) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(29) && flag(32)
+    build-depends: unsatisfiable <0
+
+  if flag(29) && flag(31)
+    build-depends: unsatisfiable <0
+
+  if flag(29) && flag(30)
+    build-depends: unsatisfiable <0
+
+  if !flag(25) && !flag(26) && !flag(27) && !flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(27) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(26) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(28)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(27)
+    build-depends: unsatisfiable <0
+
+  if flag(25) && flag(26)
+    build-depends: unsatisfiable <0
+
+  if !flag(21) && !flag(22) && !flag(23) && !flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(23) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(22) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(24)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(23)
+    build-depends: unsatisfiable <0
+
+  if flag(21) && flag(22)
+    build-depends: unsatisfiable <0
+
+  if !flag(17) && !flag(18) && !flag(19) && !flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(19) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(18) && flag(19)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(20)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(19)
+    build-depends: unsatisfiable <0
+
+  if flag(17) && flag(18)
+    build-depends: unsatisfiable <0
+
+  if !flag(13) && !flag(14) && !flag(15) && !flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(15) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(14) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(16)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(15)
+    build-depends: unsatisfiable <0
+
+  if flag(13) && flag(14)
+    build-depends: unsatisfiable <0
+
+  if !flag(9) && !flag(10) && !flag(11) && !flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(11) && flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(10) && flag(11)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(12)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(11)
+    build-depends: unsatisfiable <0
+
+  if flag(9) && flag(10)
+    build-depends: unsatisfiable <0
+
+  if !flag(5) && !flag(6) && !flag(7) && !flag(8)
+    build-depends: unsatisfiable <0
+
+  if flag(7) && flag(8)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(8)
+    build-depends: unsatisfiable <0
+
+  if flag(6) && flag(7)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(8)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(7)
+    build-depends: unsatisfiable <0
+
+  if flag(5) && flag(6)
+    build-depends: unsatisfiable <0
+
+  if !flag(1) && !flag(2) && !flag(3) && !flag(4)
+    build-depends: unsatisfiable <0
+
+  if flag(3) && flag(4)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(4)
+    build-depends: unsatisfiable <0
+
+  if flag(2) && flag(3)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(4)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(3)
+    build-depends: unsatisfiable <0
+
+  if flag(1) && flag(2)
+    build-depends: unsatisfiable <0
+
+  if !flag(43)
+    build-depends: unsatisfiable <0
+
+  if !flag(30)
+    build-depends: unsatisfiable <0
+
+  if !flag(23)
+    build-depends: unsatisfiable <0
+
+  if !flag(12)
+    build-depends: unsatisfiable <0
+
+  if !flag(5)
+    build-depends: unsatisfiable <0
+

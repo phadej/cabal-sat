@@ -1,0 +1,6 @@
+packages: .
+
+package cabal-sat
+  ghc-options: -Wall
+
+packages: /code/public-haskell/sat-simple
